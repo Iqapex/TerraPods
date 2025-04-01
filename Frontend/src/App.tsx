@@ -13,6 +13,7 @@ import Contact from './pages/Contact';
 import Programs from './pages/Programs';
 import Calendar from './pages/Calendar';
 import MembershipPortal from './pages/MembershipPortal';
+import AuthForm from './components/AuthForm';
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
         <Navbar />
         <main className="flex-grow">
           <Routes>
+          <Route path="/login" element={<AuthForm />} />
+          <Route path="/signup" element={<AuthForm />} />
             <Route path="/" element={<Home />} />
             <Route path="/artists" element={<ArtistsShowcase />} />
             <Route path="/news" element={<News />} />

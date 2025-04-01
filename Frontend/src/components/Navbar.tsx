@@ -32,6 +32,7 @@ const Navbar = () => {
     { name: 'Programs', path: '/programs' },
     { name: 'Calendar', path: '/calendar' },
     { name: 'Membership', path: '/membership' },
+    { name: 'Login', path: '/login' },
   ];
 
   const menuVariants = {
@@ -71,7 +72,7 @@ const Navbar = () => {
 
   return (
     <nav className={`fixed w-full top-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-sm border-b border-gray-100' : 'bg-white/90 backdrop-blur-md'}`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-screen mx-auto md:px-24 sm:px-6">
         <div className="flex justify-between h-20 items-center">
           {/* Logo */}
           <motion.div whileHover={{ scale: 1.05 }}>
@@ -99,7 +100,7 @@ const Navbar = () => {
               >
                 <Link
                   to={item.path}
-                  className={`px-4 py-2 font-medium transition-colors relative group ${location.pathname === item.path ? 'text-emerald-700' : 'text-gray-600 hover:text-emerald-700'}`}
+                  className={`px-4 py-2 font-medium text-[16px] transition-colors relative group ${location.pathname === item.path ? 'text-emerald-700' : 'text-gray-600 hover:text-emerald-700'}`}
                 >
                   {item.name}
                   {location.pathname === item.path && (
@@ -129,7 +130,7 @@ const Navbar = () => {
               >
                 <Link
                   to={item.path}
-                  className={`px-3 py-2 text-sm font-medium transition-colors relative group ${location.pathname === item.path ? 'text-emerald-700' : 'text-gray-500 hover:text-emerald-700'}`}
+                  className={`px-3 py-2 text-[16px] font-medium  transition-colors relative group ${location.pathname === item.path ? 'text-emerald-700' : 'text-gray-500 hover:text-emerald-700'}`}
                 >
                   {item.name}
                   {location.pathname === item.path && (

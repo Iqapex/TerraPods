@@ -6,7 +6,7 @@ const HeroSection = () => {
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1501084817091-258c42bd1b4f"
+          src="https://media.istockphoto.com/id/2153573059/photo/mountain-covered-with-a-coniferous-fir-tree-forest-scenic-landscape-from-carpathian-mountains.webp?a=1&b=1&s=612x612&w=0&k=20&c=T8LR8_7_56E8X_Q3-PONzFG-fv5BMCk8UKFkbbo1fN4="
           alt="TerraPods Nature"
           className="w-full h-full object-cover"
         />
